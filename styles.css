@@ -1,0 +1,56 @@
+body{
+    background-color: white;
+}
+#border{
+    height: 72vh;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5%;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgba(255, 204, 0, 0.4);
+}
+
+#screen{
+    height: 20vh;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5%;
+    background-color: white;
+
+}
+
+#buttonsContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 5%;
+    column-gap: 2%;
+    margin:5%;
+}
+
+.button{
+    border: solid 2px black;
+    height: 2.5rem;
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: rgb(255, 204, 0); 
+}
+
+#button_AC{
+    grid-column: span 2;
+}
+
+#button_DEL{
+    grid-column: span 2;
+}
+
+.button:hover{
+    background-color: rgb(204, 163, 0);
+    transition-duration: 0.3s;
+}
+
+.button:active{
+    box-shadow: 2px 2px 3px rgb(153, 122, 0);
+    transition-duration: 0s;
+}
